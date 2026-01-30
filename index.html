@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magic Background - Interactive visual effects">
+    <title>Magic Background</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+</head>
+
+<body>
+    <header class="header">
+
+        <h1>Magic Background</h1>
+        <p class="subtitle">Transform your AI Powered ideas into amazing backgrounds. <br> Describe what you imagine and
+            watch the magic happen!</p>
+
+    </header>
+
+    <main class="container">
+        <section class="card main-card">
+            <h2 class="card-header">Describe your background idea</h2>
+
+            <form class="form-group">
+                <textarea rows="5" id="description"
+                    placeholder="Eg.: Black carbon fiber with crimson glowing details"></textarea>
+                <button id="gen-btn" class="btn-magic">
+                    <span id="btn-text">Generate your Magic Background!</span>
+                </button>
+            </form>
+            
+        </section>
+
+        <section id="preview-section" class="preview-card"></section>
+
+        <section id="code-output" class="code-grid">
+            <div class="card code-card">
+                <h3 class="code-title">HTML code snippet:</h3>
+
+                <pre id="html-code" class="code-block"></pre>
+            </div>
+
+            <div class="card code-card">
+                <h3 class="code-title">CSS code snippet:</h3>
+
+                <pre id="css-code" class="code-block"></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Magic Background | Gabriel Camacho powered by AI</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
