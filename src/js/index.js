@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 tagStyle = document.createElement("style");
                 tagStyle.id = "dynamic-style";
                 tagStyle.textContent = data.css;
-                tagStyle.head.appendChild(tagStyle);
+                document.head.appendChild(tagStyle);
             }
             
 
