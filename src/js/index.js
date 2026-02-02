@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //POST request to n8n API
         try{
-            const answer = await fetch("https://gabriel31299.app.n8n.cloud/webhook-test/magic-background",{
+            const answer = await fetch("https://gabriel31299.app.n8n.cloud/webhook/magic-background",{
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
